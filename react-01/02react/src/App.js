@@ -1,21 +1,37 @@
 import React from "https://esm.sh/react@19.1.0";
 import ReactDOM from "https://esm.sh/react-dom@19.1.0/client";
 
-const Chai = () => {
+const Teachers = (props) => {
+  console.log(props);
+
   return React.createElement("div", {}, [
-    React.createElement("h1", {}, "Masala Chai"),
-    React.createElement("p", {}, "Ginger Chai"),
+    React.createElement("h1", {}, props.name),
+    React.createElement("p", {}, props.subject),
   ]);
 };
 
 const App = () => {
-  return React.createElement("div", {}, [
-    React.createElement("h1", {}, "Chai Variations by Chaicode"),
-    React.createElement(Chai),
-    React.createElement(Chai),
-    React.createElement(Chai),
-    React.createElement(Chai),
-  ]);
+
+  return React.createElement(
+      "div", 
+      {}, 
+      [
+      React.createElement("h1", {}, "List of teachers and there subjects"),
+      React.createElement(Teachers, {
+        name: "Ashish",
+        subject: "maths",
+      }),
+
+      React.createElement(Teachers, {
+        name: "Akash",
+        subject: "Physics",
+      }),
+      React.createElement(Teachers, {
+        name: "Rohit",
+        subject: "sports",
+      }),
+    ]
+  );
 };
 
 const container = document.getElementById("root");
