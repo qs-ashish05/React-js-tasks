@@ -1,0 +1,22 @@
+React Notes
+
+1. funtion based components writen in jsx - i.e javascript + HTML 
+
+2. install extension - ES7+ React/Redux/React-Native snippets 
+this will allow to get react code snippets 
+
+3. after installing this extension we can make use of the rcf to generate the 
+	react functional components 
+	
+4. when we pass properties (props) from one components to another we should name that as children only, if we use any other naming then it might not work 
+
+5. when we pass a prop from one component to another we should use the format of objects only
+
+ <TodoCard myTodo={value} />  
+ 
+ here the myTodo (which is on left hand side) we use in the next component
+ and the value (on right side) refers to the value in current file
+ 
+ 
+ 
+

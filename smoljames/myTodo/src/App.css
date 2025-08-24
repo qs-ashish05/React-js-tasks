@@ -1,0 +1,8 @@
+.Todocard{
+    display: flex;
+    gap: 5px;
+}
+
+.Todocard p {
+    margin: 2px;
+}
